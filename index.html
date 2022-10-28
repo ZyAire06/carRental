@@ -5,10 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Rental Estimator</title>
+    <style>
+        .container{
+            display:grid;
+            justify-content: center;
+           
+            
+           
+        }
+     
+        h1{ 
+            text-align: center;
+            font-size: 35px;
+            font-weight: 500;
+        
+            border-radius: 30px;
+    
+        }
+        form{
+            margin-left: 450px;
+            margin-right: 450px;
+           background-color: rgba(219, 202, 212, 0.789);
+            padding: 90px;
+            border-radius: 30px;
+            text-align: justify;
+        }
+        #btn{
+            border-radius: 25px;
+            background-color: rgb(0, 106, 255);
+            color: #fff;
+            padding: 10px;
+        }
+        input[type]{
+            border-radius: 20px;
+            outline-color: rgb(0, 106, 255) ;
+           
+        }
+        .total
+        {
+            margin-top:30px;
+            text-align:left;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>ACME Car Rental</h1>
+    <div class="container">
     <form >
+        <h1>ACME Car Rental</h1>
+
+        <h2>Rent-A-Car</h2>
         <label for="pickupDate">Pickup Date</label>
         <input type="date"> 
         <br>
@@ -41,15 +87,43 @@
 
         <br>
         <br>
-    
 
-        <input type="button" value="Esitmate Total Cost">
+        <input id= "btn" type="button" value="Esitmate Total Cost">
+        <br>
+
+    
+        <div class="total">
+            <label> Car Rental: </label>
+            <input type="text" name="rental" id="rental">
+            <br>
+            <br>
+       
+            <label> Options: </label>
+            <input type="text" name="options" id="options">  
+            <br>
+            <br>
+
+            <label>Under 25 SurCharge </label>
+            <input type="text" name="under" id="under">
+            <br>
+            <br>
+
+            <label> Total Due: </label>
+            <input type="text" name=""totalDue id="totalDue">
+       
+        </div>
+<!-- 
+        <p>Car Rental: <output>x </output></p> 
+    
+        <p>Options:   <output>x </output> </p> 
+    
+        <p>Under 25 surcharge:   <output>x </output></p>  
+      
+        <br>
+        <p>Total Due:   <output> x </output></p>
+         -->
     </form>
 
-    <p>Car Rental: XXX XX</p>
-    <p>Options: XX XX</p>
-    <p>Under 25 surcharge: XX XX</p>
-    <br>
-    <p>Total Due: XXX XX</p>
+    </div>
 </body>
 </html>
