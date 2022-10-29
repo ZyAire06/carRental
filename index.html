@@ -56,11 +56,11 @@
 
         <h2>Rent-A-Car</h2>
         <label for="pickupDate">Pickup Date</label>
-        <input type="date"> 
+        <input type="date" id="date"> 
         <br>
         <br>
         <label for="numDays">Number of Days</label>
-        <input type="number">
+        <input type="number" id="numDays">
 
         <h2>Options</h2>
 
@@ -94,22 +94,22 @@
     
         <div class="total">
             <label> Car Rental: </label>
-            <input type="text" name="rental" id="rental">
+            <input type="text" name="rental" id="rental" readonly>
             <br>
             <br>
        
             <label> Options: </label>
-            <input type="text" name="options" id="options">  
+            <input type="text" name="options" id="options" readonly>  
             <br>
             <br>
 
             <label>Under 25 SurCharge </label>
-            <input type="text" name="under" id="under">
+            <input type="text" name="under" id="under" readonly>
             <br>
             <br>
 
             <label> Total Due: </label>
-            <input type="text" name=""totalDue id="totalDue">
+            <input type="text" name=""totalDue id="totalDue" readonly>
        
         </div>
 <!-- 
@@ -125,5 +125,6 @@
     </form>
 
     </div>
+    <script src="estimate.js"></script>
 </body>
 </html>
